@@ -1,10 +1,9 @@
 class School
 
-def initialize(roster)
+def initialize(name, roster)
+  @name = name
+  @roster = {}
 end
 
-def roster=(roster)
-  @roster = []
-end
 
 end
