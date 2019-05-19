@@ -10,10 +10,8 @@ def roster
 end
 
 def add_student=(name, grade)
-  @name = name
-  name << roster
-  @grade = grade
-  grade << roster
+  if roster[grade] != nil
+    roster[grade] << name
 end
 
 def add_student
