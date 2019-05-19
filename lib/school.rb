@@ -11,7 +11,9 @@ end
 
 def add_student=(name, grade)
   @name = name
+  name << roster
   @grade = grade
+  grade << roster
 end
 
 def add_student
