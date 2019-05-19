@@ -9,18 +9,14 @@ def roster
   @roster
 end
 
-def add_student=(name, grade)
-  if roster[grade] != nil
-    roster[grade] << name
-  else
-    roster[grade] = name
+def add_student(name, grade)
+    @student_name = name
+    @grade = grade
+    if @roster.include?(grade) == false
+      @roster[grade] = []
+    end
+    @roster[grade] << name
   end
-end
-
-def add_student
-  @name
-  @grade
-end
 
 
 end
